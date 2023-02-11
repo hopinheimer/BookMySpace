@@ -1,0 +1,14 @@
+server:
+   port: 8081
+spring:
+   profiles:
+      active: ${active:dev}
+   application:
+      name: ${appname:bookmyspace}
+logging:
+   level:
+      ROOT: ${ROOT:"INFO"}
+   file:
+      name: ${spring.application.name}.log
+   pattern:
+      level: '%5p [${spring.ziplin.service.name:${spring.application.name}} : %X{traceId}, %X{spanId}]'
