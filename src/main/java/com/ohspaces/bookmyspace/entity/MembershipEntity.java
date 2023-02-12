@@ -30,6 +30,9 @@ public class MembershipEntity {
     @Column(name = "end_date")
     private Timestamp endDate;
 
+    @Column(name ="is_active")
+    private Boolean isActive;
+
     @Column(name = "created_date",updatable = false)
     private Timestamp created_date;
 

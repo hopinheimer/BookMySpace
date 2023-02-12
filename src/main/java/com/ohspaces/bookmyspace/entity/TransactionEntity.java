@@ -1,8 +1,6 @@
 package com.ohspaces.bookmyspace.entity;
 
 import lombok.Data;
-import lombok.Generated;
-
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -14,10 +12,18 @@ public class TransactionEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long transactionID;
-
     @Column(name = "txn_id")
     private Long txnId;
+
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(referencedColumnName = "mem_id", name = "mem_id")
+    private MembershipEntity membership;
+
+
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(referencedColumnName = "user_id", name = "user_id")
+    private UserEntity user;
+
 
     @Column(name = "amount")
     private Double amount;

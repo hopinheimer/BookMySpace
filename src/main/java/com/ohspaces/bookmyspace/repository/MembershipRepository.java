@@ -12,9 +12,9 @@ import java.util.Optional;
 @Repository
 public interface MembershipRepository extends JpaRepository<MembershipEntity, Long> {
 
-    @Query(nativeQuery = true, value = "select * from membership where user_id=?0")
-    Optional<MembershipEntity> getMembershipByUserId(Long userId);
+    @Query(nativeQuery = true, value = "select * from membership where user_id=:userId and is_active=0")
+    Optional<MembershipEntity> getMembershipByUserId(@Param("userId") Long userId);
 
-    @Query(nativeQuery = true, value = "select * from membership where start_date<=:sd OR end_date>=:ed AND product_id=:pi")
-    Optional<MembershipEntity> getMembershipBydate(@Param("sd") LocalDateTime startDate,@Param("ed") LocalDateTime endDate,@Param("pi") Long productId);
+    @Query(nativeQuery = true, value = "select * from membership where end_date>=:sd AND product_id=:pi AND is_active=1")
+    Optional<MembershipEntity> getMembershipBydate(@Param("sd") LocalDateTime startDate,@Param("pi") Long productId);
 }

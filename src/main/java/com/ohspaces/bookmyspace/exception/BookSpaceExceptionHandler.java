@@ -20,11 +20,11 @@ public class BookSpaceExceptionHandler extends ResponseEntityExceptionHandler {
     @ExceptionHandler(Throwable.class)
     public ResponseEntity<ApiError> handleGenericException(Throwable ex) {
 
-
+        log.info("{}", ex);
         ApiError error = ApiError.builder().code("BSE555").message("Internal Server Error").build();
 
 
-        return new ResponseEntity<ApiError>(error, HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
 }
