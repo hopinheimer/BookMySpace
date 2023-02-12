@@ -735,3 +735,31 @@ Caused by: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for lengt
 2023-02-12 10:19:01.038  INFO [bookmyspace : , ] 98997 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-02-12 10:19:01.039  INFO [bookmyspace : , ] 98997 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-02-12 10:19:01.040  INFO [bookmyspace : , ] 98997 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-02-12 11:09:45.773  INFO [bookmyspace : , ] 98997 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 11:09:45.814  INFO [bookmyspace : , ] 98997 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-12 11:09:45.822  INFO [bookmyspace : , ] 98997 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-12 11:09:50.649  INFO [bookmyspace : , ] 3243 --- [main] c.o.bookmyspace.BookmyspaceApplication   : Starting BookmyspaceApplication using Java 11.0.18 on Fallen-Angel.local with PID 3243 (/Users/manas/manas/projects/ohspaces_ws/bookmyspace/target/classes started by manas in /Users/manas/manas/projects/ohspaces_ws/bookmyspace)
+2023-02-12 11:09:50.654  INFO [bookmyspace : , ] 3243 --- [main] c.o.bookmyspace.BookmyspaceApplication   : The following 1 profile is active: "dev"
+2023-02-12 11:09:51.229  INFO [bookmyspace : , ] 3243 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-12 11:09:51.279  INFO [bookmyspace : , ] 3243 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 4 JPA repository interfaces.
+2023-02-12 11:09:51.848  INFO [bookmyspace : , ] 3243 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-02-12 11:09:51.870  INFO [bookmyspace : , ] 3243 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-12 11:09:51.871  INFO [bookmyspace : , ] 3243 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-12 11:09:52.166  INFO [bookmyspace : , ] 3243 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-12 11:09:52.167  INFO [bookmyspace : , ] 3243 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1405 ms
+2023-02-12 11:09:52.365  INFO [bookmyspace : , ] 3243 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-12 11:09:52.428  INFO [bookmyspace : , ] 3243 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-02-12 11:09:52.595  INFO [bookmyspace : , ] 3243 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-12 11:09:52.730  INFO [bookmyspace : , ] 3243 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-12 11:09:53.143  INFO [bookmyspace : , ] 3243 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-12 11:09:53.177  INFO [bookmyspace : , ] 3243 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-02-12 11:09:53.936  INFO [bookmyspace : , ] 3243 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-12 11:09:53.943  INFO [bookmyspace : , ] 3243 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-12 11:09:54.247  WARN [bookmyspace : , ] 3243 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-12 11:09:54.461  INFO [bookmyspace : , ] 3243 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-02-12 11:09:54.469  INFO [bookmyspace : , ] 3243 --- [main] c.o.bookmyspace.BookmyspaceApplication   : Started BookmyspaceApplication in 4.549 seconds (JVM running for 5.009)
+2023-02-12 11:10:37.265  INFO [bookmyspace : , ] 3243 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-12 11:10:37.266  INFO [bookmyspace : , ] 3243 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-12 11:10:37.269  INFO [bookmyspace : , ] 3243 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-02-12 11:20:53.082  WARN [bookmyspace : , ] 3243 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s736ms), soft-evicting connections from pool.
+2023-02-12 11:27:37.934  WARN [bookmyspace : , ] 3243 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m44s855ms).

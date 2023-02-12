@@ -9,9 +9,11 @@ import com.ohspaces.bookmyspace.model.CheckoutResponseModel;
 import com.ohspaces.bookmyspace.service.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
+
 import java.util.List;
+
 @RestController
-public class BookingResourceImpl implements BookingResource{
+public class BookingResourceImpl implements BookingResource {
 
     @Autowired
     private BookingService bookingService;
